@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:padding="20dp"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello, We need some info"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profile_imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_user_place_holder"
+                android:tint="@color/grey"
+                android:tintMode="src_in"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_fname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="FIRST NAME"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_lname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="LAST NAME"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="EMAIL"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_group_gender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="  Male"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="   Female"
+                android:buttonTint="@color/colorPrimary"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOB"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite"/>
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="Phone"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Info"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_vehicle_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="VEHICLE NUMBER"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_vehicle_brand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="VEHICLE BRAND"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_vehicle_MODEL"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorWhite"
+            android:hint="VEHICLE MODEL"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Required Steps"
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We need you to upload some documents"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"/>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/upload_doc_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"/>
+
+            <TextView
+                android:id="@+id/tv_doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Driver License Front"
+                android:layout_toRightOf="@id/upload_doc_img"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_upload_done"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_upload_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="89%"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="20dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/upload_doc_img1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"/>
+
+            <TextView
+                android:id="@+id/tv_doc_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Driver License Back"
+                android:layout_toRightOf="@id/upload_doc_img1"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_upload_done1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_upload_percent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="89%"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="20dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/upload_doc_img2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"/>
+
+            <TextView
+                android:id="@+id/tv_doc_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Vehicle Insurance"
+                android:layout_toRightOf="@id/upload_doc_img2"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_upload_done2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_upload_percent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="89%"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="20dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/upload_doc_img3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"/>
+
+            <TextView
+                android:id="@+id/tv_doc_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Certificate of Registration"
+                android:layout_toRightOf="@id/upload_doc_img3"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_upload_done3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_upload_percent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="89%"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="20dp"
+            android:layout_marginTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/upload_doc_img4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_upload_24"/>
+
+            <TextView
+                android:id="@+id/tv_doc_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Contract carriage permit"
+                android:layout_toRightOf="@id/upload_doc_img4"
+                android:layout_marginStart="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_upload_done4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_call"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_upload_percent4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="89%"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+<Button
+    android:id="@+id/btn_save"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/btn_bg"
+    android:text="Save"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "468129636728",
+    "firebase_url": "https://africar-9309f-default-rtdb.firebaseio.com",
+    "project_id": "africar-9309f",
+    "storage_bucket": "africar-9309f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468129636728:android:94b6a606a9c1ef67c3e88d",
+        "android_client_info": {
+          "package_name": "com.mahanthesh.africar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468129636728-rnt4ob4agftfqhkike3abfefpu96too5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mahanthesh.africar",
+            "certificate_hash": "da7c834003ae6a188e43a80aa6ed471fbf632d03"
+          }
+        },
+        {
+          "client_id": "468129636728-78ccd45i6j3voqb4n8orct7ff4s1j8gd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnbI-St8yo_Z3LKo2vv-Jj0uTsh96afZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468129636728-78ccd45i6j3voqb4n8orct7ff4s1j8gd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
